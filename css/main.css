@@ -1,0 +1,6 @@
+@import url("./reset.css");
+@import url("./design-system/color.css");
+@import url("./design-system/font.css");
+
+@import url("./component/nav/nav.css");
+@import url("./component/footer/footer.css");
