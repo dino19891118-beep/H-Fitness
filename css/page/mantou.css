@@ -1,1 +1,152 @@
-/*# sourceMappingURL=mantou.css.map */
+.hero-section {
+  width: 100%;
+  height: 82vh;
+  position: relative;
+  display: flex;
+}
+.hero-section .img-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.hero-section .img-container .overlay {
+  position: absolute;
+  left: -48%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%);
+          mask-image: linear-gradient(to right, rgb(0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+.hero-section .img-container .img-controller {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1.9) rotate(-2deg);
+  left: 10%;
+  top: 120px;
+  z-index: 1;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.hero-section .hero-title-zone {
+  z-index: 2;
+  align-self: center;
+  position: absolute;
+  left: 8%;
+  border-radius: 30px;
+  background: linear-gradient(96deg, rgba(129, 216, 208, 0.6) 10.98%, rgba(17, 81, 103, 0.6) 110.89%);
+}
+.hero-section .hero-title-zone .hero-title-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 64px 44px;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 14px;
+  transform: skew(-12deg);
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone .line-square {
+  height: 8px;
+  background: #fff;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone .line-square.-line1 {
+  width: 51.2%;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone .line-square.-line2 {
+  width: 4vw;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone .line-square.-line3 {
+  width: 1vw;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .header-zone .line-fitness {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: #fff;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .hero-title-content .big-title,
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .hero-title-content .sub-title {
+  color: #fff;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .hero-title-content .big-title {
+  font-size: var(--fs-hero-title);
+  font-weight: var(--fw-bold);
+  display: flex;
+  gap: 2vw;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .top-side .hero-title-content .sub-title {
+  font-weight: var(--fw-bold);
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side {
+  margin-top: 2rem;
+  display: grid;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  row-gap: 1rem;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  align-self: center;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box {
+  display: flex;
+  align-items: first baseline;
+  gap: 10px;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box .hp-icon.svg-container {
+  width: 32px;
+  height: auto;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box .hp-icon.svg-container svg {
+  width: 100%;
+  height: auto;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box .text {
+  color: #fff;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.hero-section .hero-title-zone .hero-title-container .hero-title-box .bottom-side .item-box:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}/*# sourceMappingURL=mantou.css.map */

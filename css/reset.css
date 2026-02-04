@@ -30,6 +30,9 @@ svg {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
 
 input,
 button,
@@ -54,9 +57,22 @@ h6 {
     overflow-wrap: break-word;
 }
 
+figure {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    display: none;
+}
+
 #root,
 #__next {
     isolation: isolate;
+}
+
+main {
+    margin-top: 56px;
 }
 
 /* 標題區 */
