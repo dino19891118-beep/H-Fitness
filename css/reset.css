@@ -76,14 +76,6 @@ main {
 }
 
 /* 標題區 */
-.section-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    width: 100%;
-    height: clamp(60px, 8vw, 80px);
-}
 
 .section-title {
     font-size: var(--fs-section-title);
@@ -93,72 +85,10 @@ main {
     line-height: var(--lh-tight);
 }
 
-.section-title.zhtw-container {
-    display: flex;
-    align-items: first baseline;
-    gap: .77rem;
-
-}
-
-.section-subtitle {
-    font-size: clamp(4.5rem, 5vw, 5.25rem);
-    color: var(--color-primary);
-    /* 使用主色調 */
-    /* text-transform: uppercase; */
-    font-weight: var(--fw-regular);
-    /* padding-left: .2rem; */
-    position: absolute;
-    opacity: .4;
-    transform: skew(-12deg);
-    left: 2rem;
-    top: -.75rem;
-    letter-spacing: -10px;
-    z-index: -1;
-}
-
-.article-zone .article-title-box .title-text {
-    font-size: clamp(1.05rem, 3vw, 1.3rem);
-    font-weight: var(--fw-medium);
-    color: var(--color-text-primary);
-    /* 標題用亮白 */
-    line-height: var(--lh-tight);
-
-}
-
-.article-zone .article-outter {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.article-zone .article-container {
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-}
-
-.article-zone .article-container .text {
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    color: var(--color-text-secondary);
-
-}
-
-.article-zone .article-title-box .small-title {
-    color: var(--color-text-primary);
-    color: rgb(119, 212, 255);
-    font-size: var(--fs-small-title);
-    transform: skew(-9deg);
-    font-weight: var(--fw-regular);
-    line-height: var(--lh-tight);
-    margin-top: .2rem;
-    opacity: 1;
-}
-
 
 /* 預留 */
 .section-padding-top {
-    padding-top: 240px;
+    padding-top: 200px;
 }
 
 .section-padding-bottom {
@@ -167,6 +97,52 @@ main {
 
 .section-padding-bottom.-bt {
     padding-bottom: 0;
+}
+
+.section-padding-rl {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.section-title-zone {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title-zone .line {
+    width: 100%;
+    height: 10px;
+    background: var(--color-primary);
+    position: absolute;
+    z-index: 1;
+}
+
+.section-title-zone .title-box {
+    padding: 0 20px;
+    background: #fff;
+    z-index: 2;
+    margin-top: -4px;
+}
+
+.section-title-zone .title-box .text {
+    font-size: var(--fs-subtitle);
+    color: var(--color-third);
+
+}
+
+.article-container .title {
+    color: var(--color-primary);
+    font-size: var(--fs-small-title);
+
+}
+
+.article-container .content {
+    color: var(--color-text-secondary);
+    font-size: var(--fs-body);
 }
 
 .pt-005 {
@@ -231,4 +207,41 @@ main {
 
 .pb-035 {
     padding-bottom: 3.5rem;
+}
+
+@media (max-width:1600px) {
+    .section-padding-rl {
+        max-width: 100%;
+        margin: auto;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (max-width:1100px) {
+    .section-padding-rl {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .section-padding-rl {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:560px) {
+    .section-padding-rl {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width:420px) {
+    .section-padding-rl {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

@@ -2,14 +2,14 @@
     /* --- 品牌核心色系 --- */
     /* Tiffany Blue #81D8D0 */
     --color-primary: hsl(174, 53%, 68%);
-    --color-secondary: #115167;
+    --color-secondary: hsl(174, 33%, 48%);
+    --color-third: hsl(174, 38%, 23%);
 
 
     /* 次要色調：Tiffany linear */
-    --color-secondary: hsl(174, 100%, 16%);
     --color-linear-01: linear-gradient(180deg, #81D8D0 0%, #115167 100%);
     --color-linear-02: linear-gradient(96deg, rgba(129, 216, 208, 0.60) 10.98%, rgba(17, 81, 103, 0.60) 110.89%);
-
+    --color-linear-03: linear-gradient(180deg, rgba(129, 216, 208, 1) 0%, rgba(17, 81, 103, .6) 100%);
 
 
     /* font */
