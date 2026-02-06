@@ -1,0 +1,141 @@
+.footer-zone {
+    width: 100%;
+    height: fit-content;
+    padding: clamp(80px, 6vw, 120px) clamp(80px, 6vw, 120px) clamp(30px, 4vw, 60px) clamp(80px, 6vw, 120px);
+    background: var(--color-linear-01);
+
+    p,
+    span,
+    i {
+        color: #fff;
+    }
+
+    svg {
+        fill: #fff;
+        color: #fff;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 120px;
+
+        .top {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+
+            .left.logo.img-container {
+                max-width: 450px;
+                min-width: 180px;
+                height: fit-content;
+
+                .img-controller {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+
+            .right {
+                margin-top: 20px;
+
+                .info-zone {
+                    display: flex;
+                    gap: 5vw;
+
+                    .time-zone {
+                        display: flex;
+                        flex-direction: column;
+
+                        .title {
+                            font-size: var(--fs-small);
+                            font-weight: var(--fw-bold);
+                            margin-bottom: 10px;
+                        }
+
+                        .box {
+                            &:first-of-type {
+                                margin-bottom: 20px;
+                            }
+
+                            .date {
+                                font-size: var(--fs-small);
+                                font-weight: var(--fw-regular);
+                            }
+
+                            .time {
+                                font-size: var(--fs-small-title);
+                                font-weight: var(--fw-regular);
+                                margin-top: -2px;
+                            }
+                        }
+                    }
+
+                    .set {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .item {
+                            .title {
+                                font-size: var(--fs-small);
+                                font-weight: var(--fw-bold);
+                                margin-bottom: 5px;
+                            }
+
+                            .text {
+                                font-size: var(--fs-small-title);
+                                font-weight: var(--fw-regular);
+
+                                &.phone {
+                                    font-weight: var(--fw-regular);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .social-zone {
+                    display: flex;
+                    margin-top: 40px;
+                    width: 100%;
+                    justify-content: end;
+                    gap: 20px;
+
+                    .icon-box {
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        padding: 8px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: end;
+
+            .term {
+                font-size: var(--fs-small);
+                font-weight: var(--fw-light);
+            }
+        }
+    }
+}
