@@ -14,7 +14,7 @@ customElements.define('footer-zone', class extends HTMLElement {
                                     <div class="container">
                                         <div class="box">
                                             <p class="date">平日&nbsp;&nbsp;Mon&nbsp;~&nbsp;Fri</p>
-                                            <p class="time">09:00&nbsp;~&nbsp;22:00</p>
+                                            <p class="time">09:00&nbsp;~&nbsp;20:00</p>
                                         </div>
                                         <div class="box">
                                             <p class="date">週六&nbsp;&nbsp;Sat</p>
