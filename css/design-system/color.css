@@ -4,12 +4,13 @@
     --color-primary: hsl(174, 53%, 68%);
     --color-secondary: hsl(174, 33%, 48%);
     --color-third: hsl(174, 38%, 23%);
+    --color-fourth: hsl(173, 72%, 22%);
 
 
     /* 次要色調：Tiffany linear */
     --color-linear-01: linear-gradient(180deg, #81D8D0 0%, #115167 100%);
     --color-linear-02: linear-gradient(96deg, rgba(129, 216, 208, 0.60) 10.98%, rgba(17, 81, 103, 0.60) 110.89%);
-    --color-linear-03: linear-gradient(180deg, rgba(129, 216, 208, 1) 0%, rgba(17, 81, 103, .6) 100%);
+    --color-linear-03: linear-gradient(180deg, rgba(129, 216, 208, 1) 0%, hsla(174, 29%, 34%, 0.9) 100%);
 
 
     /* font */

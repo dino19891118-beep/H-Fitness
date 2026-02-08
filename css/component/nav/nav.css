@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 56px;
+  height: -moz-fit-content;
+  height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
   background: #fff;
   z-index: 20;
@@ -34,10 +35,15 @@
 }
 .nav-zone .nav-container .menu-zone {
   padding: 8px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .nav-zone .nav-container .menu-zone .menu-container,
 .nav-zone .nav-container .menu-zone .menu-box,
-.nav-zone .nav-container .menu-zone .menu-title-link {
+.nav-zone .nav-container .menu-zone .menu-title-link,
+.nav-zone .nav-container .menu-zone .menu-title-text {
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
@@ -45,19 +51,65 @@
 }
 .nav-zone .nav-container .menu-zone .menu-title-link {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.nav-zone .nav-container .menu-zone .menu-title-link i {
+  color: #fff;
+  font-size: 16px;
+  transform: translateY(-1px);
+  z-index: 2;
 }
 .nav-zone .nav-container .menu-zone .menu-title-link::after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: 12%;
   content: "";
-  width: 0;
+  width: 76%;
   height: 100%;
-  border-bottom: 2px solid var(--color-primary);
-  transition: width 0.25s linear;
+  transition: transform 0.25s linear;
+  border-bottom: 2px solid #fff;
+  align-self: center;
+  transform: scaleX(0);
 }
 .nav-zone .nav-container .menu-zone .menu-title-link:hover::after {
-  width: 100%;
+  transform: scaleX(1);
+}
+.nav-zone .nav-container .menu-zone .menu-title-link.contact {
+  background: var(--color-fourth);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 5px 12px;
+  padding-right: 15px;
+}
+.nav-zone .nav-container .menu-zone .menu-title-link.contact .ani {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  content: "";
+  width: 300px;
+  height: 200%;
+  background: linear-gradient(126deg, rgba(17, 81, 103, 0) 0%, rgba(130, 217, 208, 0.5) 40%, rgb(130, 217, 208) 110.89%);
+  z-index: 1;
+  transform: translateX(-100%) rotate(-70deg);
+  animation: beam-cycle 3.5s ease-in-out infinite;
+}
+.nav-zone .nav-container .menu-zone .menu-title-link.contact .menu-title-text {
+  color: #fff;
+  z-index: 2;
+}
+@keyframes beam-cycle {
+  0% {
+    transform: translateX(-100%) rotate(-70deg);
+  }
+  45% {
+    transform: translateX(100%) rotate(-70deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(-70deg);
+  }
 }
 .nav-zone .nav-container .menu-zone .menu-title-text {
   font-size: var(--fs-small);

@@ -11,13 +11,15 @@ customElements.define('footer-zone', class extends HTMLElement {
                             <div class="info-zone">
                                 <div class="time-zone">
                                     <p class="title">營業時間</p>
-                                    <div class="box">
-                                        <p class="date">平日&nbsp;&nbsp;Mon&nbsp;~&nbsp;Fri</p>
-                                        <p class="time">09:00&nbsp;~&nbsp;22:00</p>
-                                    </div>
-                                    <div class="box">
-                                        <p class="date">週六&nbsp;&nbsp;Sat</p>
-                                        <p class="time">09:00&nbsp;~&nbsp;17:00</p>
+                                    <div class="container">
+                                        <div class="box">
+                                            <p class="date">平日&nbsp;&nbsp;Mon&nbsp;~&nbsp;Fri</p>
+                                            <p class="time">09:00&nbsp;~&nbsp;22:00</p>
+                                        </div>
+                                        <div class="box">
+                                            <p class="date">週六&nbsp;&nbsp;Sat</p>
+                                            <p class="time">09:00&nbsp;~&nbsp;17:00</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="set">
@@ -32,18 +34,21 @@ customElements.define('footer-zone', class extends HTMLElement {
                                 </div>
                             </div>
                             <div class="social-zone">
-                                <a href="https://www.instagram.com/hplus.fitness?igsh=MXV3ZTQwYTl2eGQycw%3D%3D&utm_source=qr" class="icon-box ig" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="https://www.facebook.com/people/H-Fitness-%E9%81%8B%E5%8B%95%E7%A9%BA%E9%96%93/61580422821292/#" class="icon-box fb" target="_blank">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="https://line.me/R/ti/p/@238lrwmm?oat_content=qr" class="icon-box line" target="_blank">
-                                   <i class="fa-brands fa-line"></i>
-                                </a>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZvNxOLrwkJHW-TL10Jy8OgJmbUMLSzs3js0GMeY5PPpjsEg/viewform" class="icon-box google" target="_blank">
-                                    <i class="fa-brands fa-google"></i>
-                                </a>
+                                <p class="title">社群聯繫</p>
+                                <div class="container">
+                                    <a href="https://www.instagram.com/hplus.fitness?igsh=MXV3ZTQwYTl2eGQycw%3D%3D&utm_source=qr" class="icon-box ig" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/people/H-Fitness-%E9%81%8B%E5%8B%95%E7%A9%BA%E9%96%93/61580422821292/#" class="icon-box fb" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://line.me/R/ti/p/@238lrwmm?oat_content=qr" class="icon-box line" target="_blank">
+                                    <i class="fa-brands fa-line"></i>
+                                    </a>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZvNxOLrwkJHW-TL10Jy8OgJmbUMLSzs3js0GMeY5PPpjsEg/viewform" class="icon-box google" target="_blank">
+                                        <i class="fa-brands fa-google"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

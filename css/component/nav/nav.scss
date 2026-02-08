@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 56px;
+    height: fit-content;
     box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
     background: #fff;
     z-index: 20;
@@ -35,30 +35,100 @@
 
         .menu-zone {
             padding: 8px 0;
+            width: fit-content;
+            height: fit-content;
 
             .menu-container,
             .menu-box,
-            .menu-title-link {
+            .menu-title-link,
+            .menu-title-text {
                 width: fit-content;
                 height: fit-content;
             }
 
             .menu-title-link {
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                i {
+                    color: #fff;
+                    font-size: 16px;
+                    transform: translateY(-1px);
+                    z-index: 2;
+                }
 
                 &::after {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: -5px;
+                    left: calc(50% - (76% / 2));
                     content: "";
-                    width: 0;
+                    width: 76%;
                     height: 100%;
-                    border-bottom: 2px solid var(--color-primary);
-                    transition: width .25s linear;
+                    transition: transform .25s linear;
+                    border-bottom: 2px solid #fff;
+                    align-self: center;
+                    transform: scaleX(0);
                 }
 
                 &:hover::after {
-                    width: 100%;
+                    transform: scaleX(1);
+                }
+
+                &.contact {
+                    background: var(--color-fourth);
+                    border-radius: 24px;
+                    overflow: hidden;
+                    padding: 5px 12px;
+                    padding-right: 15px;
+
+                    .ani {
+                        position: absolute;
+                        top: -40px;
+                        left: 0;
+                        content: "";
+                        width: 300px;
+                        height: 200%;
+
+                        // 你的漸層背景 (修復了末端多餘的逗號)
+                        background: linear-gradient(126deg, rgba(17, 81, 103, 0.00) 0%, rgba(130, 217, 208, .5)40%, rgba(130, 217, 208, 1) 110.89%);
+
+                        z-index: 1;
+
+                        // --- 新增的動畫設定 ---
+                        // 1. 初始位置：先移到右邊框外
+                        transform: translateX(-100%) rotate(-70deg);
+
+                        // 2. 設定動畫：總長3.5秒 (0.5秒跑 + 3秒停)，無限循環
+                        animation: beam-cycle 3.5s ease-in-out infinite;
+
+                        // (選用) 加上一點傾斜，讓光束看起來更有速度感
+                        // transform: translateX(100%) skewX(-20deg); 
+                    }
+
+                    .menu-title-text {
+                        color: #fff;
+                        z-index: 2;
+                    }
+
+                    // 定義動畫關鍵影格
+                    @keyframes beam-cycle {
+
+                        // 0% 開始：在最右邊 (看不到)
+                        0% {
+                            transform: translateX(-100%) rotate(-70deg);
+                        }
+
+                        45% {
+                            transform: translateX(100%) rotate(-70deg);
+                        }
+
+                        100% {
+                            transform: translateX(100%) rotate(-70deg);
+                        }
+                    }
                 }
             }
 

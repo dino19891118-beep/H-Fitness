@@ -13,7 +13,9 @@ customElements.define('nav-bar', class extends HTMLElement {
                     <ul class="menu-zone">
                         <li class="pointer menu-container">
                             <div class="contact-us menu-box">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZvNxOLrwkJHW-TL10Jy8OgJmbUMLSzs3js0GMeY5PPpjsEg/viewform" target="_blank" class="menu-title-link">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZvNxOLrwkJHW-TL10Jy8OgJmbUMLSzs3js0GMeY5PPpjsEg/viewform" target="_blank" class="menu-title-link contact">
+                                        <div class="ani"></div>
+                                        <i class="fa-solid fa-comment-dots"></i>
                                         <span class="menu-title-text">聯絡我們</span>
                                     </a>
                             </div>
