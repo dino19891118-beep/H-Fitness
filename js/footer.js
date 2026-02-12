@@ -54,8 +54,11 @@ customElements.define('footer-zone', class extends HTMLElement {
                     </div>
                     <div class="bottom">
                         <span class="term">
-                            PRIVACY POLICY. COPYRIGHT © H+FINESS 運動空間
+                            PRIVACY POLICY. COPYRIGHT 
                         </span>
+                        <span class="term">
+                            © H+FINESS 運動空間
+                         </span>
                     </div>
                 </div>
             </footer>

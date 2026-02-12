@@ -2,12 +2,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: -moz-fit-content;
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 2.6px;
   background: #fff;
   z-index: 20;
+  overflow-x: hidden;
 }
 .nav-zone .top-color {
   width: 100%;

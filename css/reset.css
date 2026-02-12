@@ -14,6 +14,7 @@
 }
 
 
+html {}
 
 body {
     line-height: 1.5;
@@ -72,7 +73,10 @@ figure {
 }
 
 main {
-    margin-top: 56px;
+    margin-top: 60px;
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
 }
 
 /* 標題區 */
