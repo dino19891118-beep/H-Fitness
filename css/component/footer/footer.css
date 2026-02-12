@@ -219,4 +219,12 @@
   .footer-zone .footer-container {
     gap: 40px;
   }
+  .nav-zone .nav-container {
+    padding: 2px 20px;
+  }
+}
+@media (max-width: 488px) {
+  .nav-zone .nav-container {
+    padding: 2px 10px 2px 12px;
+  }
 }/*# sourceMappingURL=footer.css.map */
