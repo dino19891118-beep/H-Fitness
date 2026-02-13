@@ -29,7 +29,7 @@ customElements.define('footer-zone', class extends HTMLElement {
                                     </div>
                                     <div class="address item">
                                         <p class="title">地址</p>
-                                        <p class="text">台北市石牌區石牌路一段66號</p>
+                                        <p class="text">台北市北投區石牌路一段66號</p>
                                     </div>
                                 </div>
                             </div>
